@@ -15,6 +15,7 @@
 		5A4DEE5F20F722CB007878EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DEE5E20F722CB007878EA /* main.m */; };
 		5A4DEE6920F722CB007878EA /* TestSignalOfStreamMethodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DEE6820F722CB007878EA /* TestSignalOfStreamMethodTests.m */; };
 		5A4DEE7420F722CB007878EA /* TestSignalOfStreamMethodUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DEE7320F722CB007878EA /* TestSignalOfStreamMethodUITests.m */; };
+		5ECE8622591988B4EC4CF4EE /* libPods-TestSignalOfStreamMethodTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B28B895130155F9E1B66CF18 /* libPods-TestSignalOfStreamMethodTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0804C08084FCA8A0B5CB9223 /* Pods-TestSignalOfStreamMethodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignalOfStreamMethodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSignalOfStreamMethodTests/Pods-TestSignalOfStreamMethodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2820EFBC618D5D68FD937BF1 /* Pods-TestSignalOfStreamMethodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSignalOfStreamMethodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSignalOfStreamMethodTests/Pods-TestSignalOfStreamMethodTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A4DEE4C20F722C9007878EA /* TestSignalOfStreamMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSignalOfStreamMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4DEE4F20F722C9007878EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A4DEE5020F722C9007878EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		5A4DEE6F20F722CB007878EA /* TestSignalOfStreamMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestSignalOfStreamMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4DEE7320F722CB007878EA /* TestSignalOfStreamMethodUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSignalOfStreamMethodUITests.m; sourceTree = "<group>"; };
 		5A4DEE7520F722CB007878EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28B895130155F9E1B66CF18 /* libPods-TestSignalOfStreamMethodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestSignalOfStreamMethodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECE8622591988B4EC4CF4EE /* libPods-TestSignalOfStreamMethodTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B2FDB0CCE9B90367DC0C45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0804C08084FCA8A0B5CB9223 /* Pods-TestSignalOfStreamMethodTests.debug.xcconfig */,
+				2820EFBC618D5D68FD937BF1 /* Pods-TestSignalOfStreamMethodTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		531AA515A16B45E3ABEF83A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B28B895130155F9E1B66CF18 /* libPods-TestSignalOfStreamMethodTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A4DEE4320F722C9007878EA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				5A4DEE6720F722CB007878EA /* TestSignalOfStreamMethodTests */,
 				5A4DEE7220F722CB007878EA /* TestSignalOfStreamMethodUITests */,
 				5A4DEE4D20F722C9007878EA /* Products */,
+				30B2FDB0CCE9B90367DC0C45 /* Pods */,
+				531AA515A16B45E3ABEF83A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A4DEE7B20F722CB007878EA /* Build configuration list for PBXNativeTarget "TestSignalOfStreamMethodTests" */;
 			buildPhases = (
+				A3144389F988A252D73FC868 /* [CP] Check Pods Manifest.lock */,
 				5A4DEE6020F722CB007878EA /* Sources */,
 				5A4DEE6120F722CB007878EA /* Frameworks */,
 				5A4DEE6220F722CB007878EA /* Resources */,
@@ -256,6 +281,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3144389F988A252D73FC868 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestSignalOfStreamMethodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A4DEE4820F722C9007878EA /* Sources */ = {
@@ -463,6 +509,7 @@
 		};
 		5A4DEE7C20F722CB007878EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0804C08084FCA8A0B5CB9223 /* Pods-TestSignalOfStreamMethodTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +528,7 @@
 		};
 		5A4DEE7D20F722CB007878EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2820EFBC618D5D68FD937BF1 /* Pods-TestSignalOfStreamMethodTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
